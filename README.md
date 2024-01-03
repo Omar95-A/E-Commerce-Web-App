@@ -4,6 +4,6 @@
 
 ### Project In Progress ⚙️ 
 
-#### To try the website:
+#### To try the  web application:
 
 For work on this Web Application I used template:
