@@ -1,0 +1,23 @@
+
+.NewArrivals {
+  height: 80vh;
+  background-color: #d4ced0;
+  background-image: url('../../../assets/imgs/arrival-bg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: grid;
+  align-content: center;
+}
+
+.NewArrivals h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+@media (max-width: 991px) {
+  .NewArrivals {
+    background-size: 0;
+  }
+}

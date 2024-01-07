@@ -1,0 +1,139 @@
+
+:root {
+  --red-color: #f7444e;
+  --dark-color: #002c3e;
+}
+
+.dark-color {
+  color: var(--dark-color);
+}
+
+.bg-dark-color {
+  background-color: #002c3e;
+}
+
+
+.red-color {
+  color: var(--red-color);
+}
+
+.bg-red-color {
+  background-color: #002c3e;
+}
+
+/*
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #0c0c0c;
+}
+
+.navbar {
+  padding: 23px 16px;
+  background-color: #ffffff;
+}
+
+.navbar .navbar-brand img {
+  width: 250px;
+}
+
+@media (max-width: 400px) {
+  .navbar .navbar-brand img {
+    width: 200px;
+  }
+}
+
+.navbar .nav-item .nav-link {
+  font-weight: 700;
+  color: #131313;
+  padding: 11px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: var(--red-color);
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+} */
+
+
+.landing {
+  /* height: 100vh;      */
+  background-image: url('../../../assets/imgs/slider-bg.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 990px) {
+  .landing {
+    background-size: cover;
+  }
+}
+
+
+.carousel-caption {
+  width: 45%;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.landing .carousel-inner h1 {
+  font-size: 72px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  line-height: 70px;
+}
+
+.landing .carousel-inner p {
+  font-size: 20px;
+  text-align: left;
+}
+
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: 0.3;
+}
+
+.carousel-indicators [data-bs-target].active {
+  width: 30px;
+  height: 30px;
+  background-color: var(--red-color);
+}
+
+.carousel-indicators {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.landing .carousel-inner .carousel-item .row {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+.heading_container h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.heading_container h1::after {
+  content: "";
+  position: absolute;
+  background-color: var(--red-color);
+  width: 75px;
+  height: 5px;
+  bottom: -17px;
+  left: 43%;
+}

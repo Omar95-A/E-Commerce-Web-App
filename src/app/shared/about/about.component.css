@@ -1,0 +1,29 @@
+
+.about-section .row {
+  flex-wrap: nowrap !important;
+}
+
+.about-section .box {
+  color: #ffffff;
+  padding: 45px 50px;
+  /* margin-top: 20px; */
+  margin: 10px 5px;
+  width: 30%;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .about-section .row {
+    flex-wrap: wrap !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-section .box {
+    width: 100%;
+  }
+
+  .heading_container h1 {
+    font-size: 2rem;
+  }
+}
