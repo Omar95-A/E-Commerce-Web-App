@@ -1,0 +1,133 @@
+
+.Our-products .box {
+  transition: 0.5s;
+  text-align: center;
+  border: white solid 7px;
+  box-shadow: 4px 7px 12px 0px grey;
+  background-color: #f7f8f9;
+  position: relative;
+  display: grid;
+  height: 370px;
+  margin-top: 30px;
+  padding: 40px 10px;
+}
+
+.Our-products .box .img-box img {
+  width: 45%;
+}
+
+@media (min-width: 360px) and (max-width: 575px) {
+  .Our-products .box .img-box img {
+    width: 30%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .Our-products .box .img-box img {
+    width: 63%;
+  }
+}
+
+.Our-products .box img {
+  transition: 0.3s;
+}
+
+.Our-products .box:hover img {
+  transform: scale(1.1);
+}
+
+.Our-products .box .img-box {
+  transition: 0.3s;
+}
+
+.Our-products .box:hover .img-box {
+  opacity: 0.5;
+}
+
+
+
+.Our-products .box .detail-box {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+
+.Our-products .box:hover .detail-box {
+  opacity: 0.5;
+}
+
+.Our-products .box:hover {
+  background-color: rgb(247, 248, 249, 0.5);
+}
+
+.Our-products .box .option {
+  visibility: hidden;
+  transition: 0.2s;
+  transform: scaley(0);
+}
+
+.Our-products .box:hover .option {
+  visibility: visible;
+  top: 30%;
+  transform: scaley(1);
+}
+
+
+.Our-products .box .option-container {
+  /* background-color: yellow; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.Our-products .box .option {
+  position: absolute;
+  width: 100%;
+  top: 300px;
+
+  z-index: 1;
+}
+
+.Our-products .box .option-container .option1,
+.option2 {
+  transition: 0.3s;
+  background-color: #f7444e;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+  display: block;
+  border-radius: 50px;
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+.Our-products .box .option-container .option1 {
+  background-color: var(--red-color);
+  color: wheat;
+  border: var(--red-color) 1.5px solid;
+}
+
+.Our-products .box .option-container .option1:hover {
+  background-color: transparent;
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
+
+.Our-products .box .option-container .option2 {
+  background-color: black;
+  color: wheat;
+  border: black 1.5px solid;
+  margin-top: 10px;
+}
+
+.Our-products .box .option-container .option2:hover {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}

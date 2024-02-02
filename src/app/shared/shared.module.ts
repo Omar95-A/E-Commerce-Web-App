@@ -5,6 +5,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
 import { NewArrivalsComponent } from './new-arrivals/new-arrivals.component';
+import { SelectComponent } from './components/select/select.component';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 
 
@@ -13,17 +18,30 @@ import { NewArrivalsComponent } from './new-arrivals/new-arrivals.component';
     HeaderComponent,
     LandingComponent,
     AboutComponent,
-    NewArrivalsComponent
+    NewArrivalsComponent,
+    SelectComponent,
+    SpinnerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    HttpClientModule,
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
     exports: [
     HeaderComponent,
     BrowserModule,
     LandingComponent,
     AboutComponent,
-    NewArrivalsComponent
+    NewArrivalsComponent,
+    RouterModule,
+    SelectComponent,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserModule,
+    SpinnerComponent
   ]
 })
 export class SharedModule { }

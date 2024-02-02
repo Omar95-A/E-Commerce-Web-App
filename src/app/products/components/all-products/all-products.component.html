@@ -1,0 +1,18 @@
+<div class="Our-products mt-5" id="Our-products">
+  <div class="container">
+    <div class="heading_container d-flex justify-content-center align-items-center pt-5 fs-1 fw-bold">
+      <h1>Our <span class="red-color">products</span></h1>
+    </div>
+    <div class="my-2 w-25">
+      <app-select [title]="'Categories:'" [data]="categories" (selectedValue)="filterCategory($event)"></app-select>
+    </div>
+    <div class="row" *ngIf="!loading">
+      <div class="col-lg-4 col-md-6 col-sm-12 pt-5" *ngFor="let item of products">
+        <app-product [data]="item" (item)="addToCart($event)"></app-product>
+      </div>
+    </div>
+    <div class="text-center w-100" *ngIf="loading">
+      <app-spinner></app-spinner>
+    </div>
+  </div>
+</div>
