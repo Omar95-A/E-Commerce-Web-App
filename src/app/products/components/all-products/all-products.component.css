@@ -32,6 +32,10 @@
   transition: 0.3s;
 }
 
+.Our-products .container {
+  min-height: 1400px;
+}
+
 .Our-products .box:hover img {
   transform: scale(1.1);
 }

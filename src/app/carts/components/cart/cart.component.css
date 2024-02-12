@@ -1,0 +1,123 @@
+
+@media (max-width: 767px) {
+  .heading_container h1 {
+    font-size: 27px;
+  }
+
+  .cartBox .tab {
+    overflow-x: scroll;
+  }
+}
+
+.cartBox {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0 20px;
+  margin: 50px 0;
+}
+
+.cartBox .table .quantity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartBox .table .quantity input {
+  margin: 0 20px;
+}
+
+
+
+.cartBox .table th {
+  text-align: center;
+}
+
+.cartBox .table tbody {
+  border-top: 1px solid #c61d21;
+  border-bottom: 1px solid #c61d21;
+}
+
+.cartBox .table tbody tr td {
+  border-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cartBox .table tbody tr td img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.cartBox .table tbody input {
+  text-align: center;
+}
+
+.cartBox .headCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.cartBox .headCart .lead {
+  font-weight: 500;
+}
+
+.cartBox .headCart span {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.message-text {
+  min-height: 167px;
+}
+
+.success-m {
+  animation-name: ss;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.failed-m {
+  animation-name: ss;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.cartBox .tab::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+.cartBox .tab::-webkit-scrollbar-track {
+  width: 13px;
+  height: 430px;
+  flex-shrink: 0;
+  background-color: #FFF;
+  border-radius: 50px;
+  border: 1px solid #EEE;
+  margin: 15px;
+}
+
+.cartBox .tab::-webkit-scrollbar-thumb {
+  background-color: #C1C1C1;
+  border: 3px solid #FFF;
+  border-radius: 50px;
+}
+
+@keyframes ss {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+
+}

@@ -1,1 +1,60 @@
-<p>cart works!</p>
+
+<div class="cartBox" id="cartBox">
+  <div class="heading_container d-flex justify-content-center align-items-center pt-5 fs-1 fw-bold">
+    <h1>Your <span class="red-color">Shopping Cart</span></h1>
+  </div>
+  <div class="headCart">
+    <p class="lead">You have <label class="text-danger ">{{cartProducts.length}}</label> product in your cart</p>
+    <button class="btn btn-danger " (click)="clearCart()">Clear Shopping Cart</button>
+  </div>
+  <div class="tab">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Price</th>
+          <th style="width: 25%;">Quantity</th>
+          <th>Totle</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartProducts; let index = index">
+          <td><img src="{{item.item.image}}" alt=""></td>
+          <td>{{item.item.title}}</td>
+          <td>{{item.item.price}} ₺</td>
+          <td>
+            <div class="quantity">
+              <button class="btn btn-dark" (click)="addAmount(index)">&plus;</button>
+              <input class="form-control" type="number" (change)="detectChange()" [(ngModel)]="item.quantity" min="1"
+                max="5">
+              <button class="btn btn-dark" (click)="minsAmount(index)">&minus;</button>
+            </div>
+          </td>
+          <td>{{item.item.price * item.quantity}} ₺</td>
+          <td>
+            <button class="btn btn-danger" (click)="deleteProduct(index)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>Total : {{total}} ₺</th>
+          <th><button class="btn btn-success" (click)="addCart()"  (click)="clearCart()">Order Now</button></th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+<div class="message-text">
+  <div class="success-m alert alert-success" role="alert" *ngIf="success"><strong>Great,</strong> Your Order is
+    Successfully Send</div>
+  <div class="failed-m alert alert-danger" role="alert" *ngIf="failed"><strong>Sorry,</strong> Your Cart Is Empty!</div>
+</div>
+
+
