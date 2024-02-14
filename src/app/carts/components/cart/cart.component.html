@@ -23,7 +23,7 @@
         <tr *ngFor="let item of cartProducts; let index = index">
           <td><img src="{{item.item.image}}" alt=""></td>
           <td>{{item.item.title}}</td>
-          <td>{{item.item.price}} ₺</td>
+          <td>{{item.item.price}} $</td>
           <td>
             <div class="quantity">
               <button class="btn btn-dark" (click)="addAmount(index)">&plus;</button>
@@ -32,7 +32,7 @@
               <button class="btn btn-dark" (click)="minsAmount(index)">&minus;</button>
             </div>
           </td>
-          <td>{{item.item.price * item.quantity}} ₺</td>
+          <td>{{item.item.price * item.quantity}} $</td>
           <td>
             <button class="btn btn-danger" (click)="deleteProduct(index)">Delete</button>
           </td>
@@ -44,7 +44,7 @@
           <th></th>
           <th></th>
           <th></th>
-          <th>Total : {{total}} ₺</th>
+          <th>Total : {{total}} $</th>
           <th><button class="btn btn-success" (click)="addCart()"  (click)="clearCart()">Order Now</button></th>
         </tr>
       </tfoot>

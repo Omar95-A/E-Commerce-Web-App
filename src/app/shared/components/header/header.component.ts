@@ -10,4 +10,12 @@ export class HeaderComponent {
   goTo() {
     location.href= "http://localhost:4200/cart#cartBox";
   }
+
+  goToManageCarts() {
+    location.href= "http://localhost:4200/manage-carts#manageCarts";
+  }
+
+  goToManageProducts() {
+    location.href= "http://localhost:4200/manage-products#manageProducts";
+  }
 }

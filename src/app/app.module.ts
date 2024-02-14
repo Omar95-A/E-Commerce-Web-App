@@ -7,6 +7,8 @@ import { SharedModule } from './shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductsModule } from './products/products.module';
 import { CartsModule } from './carts/carts.module';
+import { ManageCartsModule } from './manage-carts/manage-carts.module';
+import { ManageProductsModule } from './manage-products/manage-products.module';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,9 @@ import { CartsModule } from './carts/carts.module';
     ProductsModule,
     FormsModule,
     ReactiveFormsModule,
-    CartsModule
-
+    CartsModule,
+    ManageCartsModule,
+    ManageProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

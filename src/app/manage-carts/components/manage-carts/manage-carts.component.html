@@ -1,0 +1,71 @@
+<div class="cartBox" id="manageCarts">
+  <form [formGroup]="form">
+    <div class="row">
+      <div class="col-md-3">
+        <label for="">Start Date</label>
+        <input type="date" formControlName="start" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <label for="">End Date</label>
+        <input type="date" formControlName="end" class="form-control">
+      </div>
+      <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-success" (click)="applyFilter()">Apply</button>
+      </div>
+    </div>
+  </form>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Date</th>
+        <th>Quantity</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of carts; let index = index">
+        <td></td>
+        <td>{{item.date | date:"longDate"}}</td>
+        <td>{{item.products.length}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteCart(item.id)">Delete</button>
+          <button type="button" class="btn btn-primary"
+            (click)="view(index)" data-fancybox data-src="#cartDetails" data-options='{"touch" : false}'>View</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="modal-popup" id="cartDetails" >
+  <h5 class="modal-title" id="exampleModalLabel">Cart Details</h5>
+  <div class="modal-body" >
+    <div class="cartBox">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Price</th>
+            <th style="width: 25%;">Quantity</th>
+            <th>Totle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of products; let i = index">
+            <td><img src="{{item.item.image}}" alt=""></td>
+            <td>{{item.item.title}}</td>
+            <td>{{item.item.price}} $</td>
+            <td>
+              {{item.quantity}}
+            </td>
+            <td>{{item.item.price * item.quantity }} $</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

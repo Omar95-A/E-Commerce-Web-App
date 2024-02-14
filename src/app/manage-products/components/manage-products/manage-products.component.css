@@ -1,0 +1,76 @@
+.cartBox {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 20px;
+  margin: 50px 0;
+}
+
+.cartBox .table .quantity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartBox .table .quantity input {
+  margin: 0 20px;
+}
+
+.cartBox .table tbody {
+  border-top: 1px solid #c61d21;
+  border-bottom: 1px solid #c61d21;
+}
+
+.cartBox .table tbody tr td {
+  border-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cartBox .table tbody tr td img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.cartBox .table tbody input {
+  text-align: center;
+}
+
+.cartBox .headCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartBox .headCart span {
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cartBox .headCart span:hover {
+  background-color: #e67779;
+  color: #fff !important;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 120px;
+  min-height: 120px;
+}
+
+.modal-body img {
+  width: 130px;
+}
+
+.modal-popup {
+  display: none;
+  border-radius: 10px;
+}
+
+.modal-popup .modal-title {
+  color: var(--red-color);
+  font-size: 22px;
+  font-weight: 600;
+}

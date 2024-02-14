@@ -17,11 +17,11 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Pages
+              Admin
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#arrival-section">About</a></li>
-              <li><a class="dropdown-item" href="#testimonial">Testimonial</a></li>
+              <li routerLink="/manage-carts"><a class="dropdown-item"  (click)="goToManageCarts()">Manage Carts</a></li>
+              <li routerLink="/manage-products"><a class="dropdown-item" (click)="goToManageProducts()">Manage Products</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -31,11 +31,11 @@
           <li class="nav-item" routerLink="/products">
             <a class="nav-link" href="#Our-products">Products</a>
           </li>
-          <li class="nav-item" routerLink="/cart">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="#Subscribe">Contact</a>
+          </li>
+          <li class="nav-item" routerLink="/">
+            <a class="nav-link" href="#testimonial">Testimonial</a>
           </li>
           <li class="nav-item" routerLink="/cart">
             <a class="nav-link" (click)="goTo()">
