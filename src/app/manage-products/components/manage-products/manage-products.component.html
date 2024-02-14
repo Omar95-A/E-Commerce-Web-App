@@ -1,4 +1,4 @@
-<div class="box mt-5 cartBox">
+<div class="box mt-5 cartBox" id="manageProducts">
   <button class="btn btn-success" data-fancybox data-src="#productDetails" data-options='{"touch" : false}'>Add Product</button>
   <table class="table table-striped">
     <thead>
@@ -31,12 +31,12 @@
     <form [formGroup]="form">
       <div class="row">
         <div class="col-md-4 col-sm-12">
-          <label for="">Title</label>
-          <input type="text" formControlName="title" class="form-control" placeholder="title">
+          <label for="title">Title</label>
+          <input id="title" type="text" formControlName="title" class="form-control" placeholder="title">
         </div>
         <div class="col-md-4 col-sm-12">
-          <label for="">Price</label>
-          <input type="number" formControlName="price" class="form-control" placeholder="price">
+          <label for="price">Price</label>
+          <input id="price" type="number" formControlName="price" class="form-control" placeholder="price">
         </div>
         <div class="col-md-4 col-sm-12">
           <app-select [data]="categories" [title]="'Categories'" (selectedValue)="getSelectedCategory($event)"
@@ -49,7 +49,7 @@
         </div>
         <div class="col-md-8 col-sm-12">
           <label for="image">Description</label>
-          <textarea class="form-control" formControlName="description" placeholder="type here .. "></textarea>
+          <textarea id="image" class="form-control" formControlName="description" placeholder="type here .. "></textarea>
         </div>
       </div>
       <div class="d-flex justify-content-end mt-3">

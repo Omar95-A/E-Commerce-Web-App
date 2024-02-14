@@ -39,3 +39,8 @@
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
 }
+
+.dropdown-item:hover {
+  cursor: pointer;
+  color: var(--red-color) !important;
+}
