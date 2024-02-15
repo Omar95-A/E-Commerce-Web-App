@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'cart' , component:CartComponent},
   {path:'manage-carts' , component:ManageCartsComponent},
   {path:'manage-products' , component:ManageProductsComponent},
-  {path:"**" , redirectTo:"products" , pathMatch:"full"}
+  {path:"**" , redirectTo:"" , pathMatch:"full"}
 ];
 
 @NgModule({
