@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Project In Progress ⚙️
 
-#### To try the web application: [Demo](https://html.design](https://omar95-a.github.io/E-Commerce-Web-App/).
+#### To try the web application: [Demo](https://omar95-a.github.io/E-Commerce-Web-App/).
 
 ## Development server
 
