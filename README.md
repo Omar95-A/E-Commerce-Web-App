@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Project In Progress ⚙️
 
+####  To be clear, the images in this website are of people that do not exist. They are not real, they are from a site that offers images of fake people AI generated. The names are also fake names.
+
 #### To try the web application: [Demo](https://omar95-a.github.io/E-Commerce-Web-App/).
 
 ## Development server
