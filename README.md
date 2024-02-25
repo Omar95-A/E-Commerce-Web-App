@@ -10,6 +10,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 #### To try the web application: [Demo](https://omar95-a.github.io/E-Commerce-Web-App/).
 
+![kayt2-ezgif com-video-to-gif-converter](https://github.com/Omar95-A/E-Commerce-Web-App/blob/main/src/assets/imgs/20240225174603-ezgif.com-crop.gif)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
