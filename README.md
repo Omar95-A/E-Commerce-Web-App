@@ -8,9 +8,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ####  To be clear, the images in this website are of people that do not exist. They are not real, they are from a site that offers images of fake people AI generated. The names are also fake names.
 
-#### To try the web application: [Demo](https://omar95-a.github.io/E-Commerce-Web-App/).
+#### To try the web application: [Live Preview](https://omar95-a.github.io/E-Commerce-Web-App/).
 
-![kayt2-ezgif com-video-to-gif-converter](https://github.com/Omar95-A/E-Commerce-Web-App/blob/main/src/assets/imgs/20240225174603-ezgif.com-crop.gif)
+<img alt="Night Coding" src="https://github.com/Omar95-A/E-Commerce-Web-App/blob/main/src/assets/imgs/20240225174603-ezgif.com-crop.gif" width="600" align="center"/>
 
 ## Development server
 
